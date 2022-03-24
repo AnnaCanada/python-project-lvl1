@@ -2,3 +2,6 @@
 [![Actions Status](https://github.com/AnnaCanada/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AnnaCanada/python-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 ![linter](https://github.com/AnnaCanada/python-project-lvl1/actions/workflows/learn-github-actions.yml/badge.svg)
+
+Installation and launch
+https://asciinema.org/a/o4qZMlRHomYO6TsD0a1OKr1u1
