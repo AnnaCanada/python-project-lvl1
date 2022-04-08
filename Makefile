@@ -1,7 +1,10 @@
 
 brain-games:
 	poetry run brain-games
-	
+
+brain-even:
+	poetry run brain-even
+
 install:
 	poetry install
 
@@ -16,3 +19,6 @@ package-install:
 
 lint:
 	poetry run flake8 brain_games
+
+uninstall:
+	pip uninstall hexlet-code
