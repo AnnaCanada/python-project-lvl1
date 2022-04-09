@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-import random
+from random import randint
 
 import prompt
 
@@ -14,10 +14,9 @@ def main():
     index = 1
     while index <= 3:
         index = index + 1
-        num1 = random.randint(1, 100)
-        num2 = random.randint(1, 100)
+        num1 = randint(1, 100)
+        num2 = randint(1, 100)
         print('Question: {} {}'.format(num1, num2))
-
         def correct_answer():
             num1a = num1
             num2a = num2
