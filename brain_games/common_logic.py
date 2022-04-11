@@ -33,4 +33,5 @@ def play_game(game):
             f"Correct answer was '{correct_answer}'\n",
             f"Let's try again, {name}!",
         )
-        return
+        break
+    print('Congratulations, {}!'.format(name))
