@@ -4,4 +4,4 @@
 ![linter](https://github.com/AnnaCanada/python-project-lvl1/actions/workflows/learn-github-actions.yml/badge.svg)
 
 The full game process.
-https://asciinema.org/a/jxc29JRLNk8DBxfSyLMEqCBGG
+[![asciicast](https://asciinema.org/a/jxc29JRLNk8DBxfSyLMEqCBGG.svg)](https://asciinema.org/a/jxc29JRLNk8DBxfSyLMEqCBGG)

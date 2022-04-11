@@ -1,8 +1,10 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "First studing project as a python programm developer by Anna Shchankina. Five math games."
 authors = ["AnnaShchankina <annazalesova@yandex.ru>"]
+classifiers = ["I don't know what to write here..."]
+repository = "https://github.com/AnnaCanada/python-project-lvl1.git"
 packages = [
   { include = "brain_games" },
 ]
