@@ -2,7 +2,7 @@
 
 from random import randint
 
-TASK_DESCRIPTION = 'What number is missing in the progression?'
+TASK = 'What number is missing in the progression?'
 
 count = randint(5, 10)
 

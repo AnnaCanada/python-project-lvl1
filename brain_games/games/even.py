@@ -2,7 +2,7 @@
 
 from random import randint
 
-TASK_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def get_game_round():

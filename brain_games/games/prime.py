@@ -2,7 +2,7 @@
 
 from random import randint
 
-TASK_DESCRIPTION = 'Answer "yes" if given the number is prime. Otherwise answer "no".'
+TASK = 'Answer "yes" if given the number is prime. Otherwise answer "no".'
 
 
 def get_game_round():

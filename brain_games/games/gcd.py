@@ -3,7 +3,7 @@
 from math import gcd
 from random import randint
 
-TASK_DESCRIPTION = 'Find the greatest common divisor of given numbers.'
+TASK = 'Find the greatest common divisor of given numbers.'
 
 
 def get_game_round():

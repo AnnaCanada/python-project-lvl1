@@ -2,7 +2,7 @@
 
 import prompt
 
-count_rounds = 3
+COUNT_ROUNDS = 3
 
 
 def welcome_user():
@@ -18,9 +18,9 @@ def get_user_name():
 def play_game(game):
     welcome_user()
     name = get_user_name()
-    print(game.TASK_DESCRIPTION)
+    print(game.TASK)
     index = 1
-    while index <= 3:
+    while index <= COUNT_ROUNDS:
         index = index + 1
         question, correct_answer = game.get_game_round()
         print('Question: {}'.format(question))
@@ -28,6 +28,9 @@ def play_game(game):
         if answer == str(correct_answer):
             print('Correct!')
             continue
-        print('{} is wrong answer ;( Correct answer was {}.'.format(answer, correct_answer))
-        return print("Let's try again, {}!".format(name))
-    return print('Congratulations, {}!'.format(name))
+        print(
+            f"'{answer}' is wrong answer ;(. ",
+            f"Correct answer was '{correct_answer}'\n",
+            f"Let's try again, {name}!",
+        )
+        return

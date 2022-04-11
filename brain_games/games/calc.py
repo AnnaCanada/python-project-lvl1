@@ -2,7 +2,7 @@
 
 import random
 
-TASK_DESCRIPTION = 'What is the result of the expression?'
+TASK = 'What is the result of the expression?'
 
 
 def get_game_round():
