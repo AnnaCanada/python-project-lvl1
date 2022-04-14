@@ -5,7 +5,7 @@
 
 ## Description
 
-This is my first trainig project as a Python backend developer according to the curriculum of the [![Hexlet.io](https://ru.hexlet.io/programs/python)](https://ru.hexlet.io/programs/python).
+This is my first trainig project as a Python backend developer according to the curriculum of the ![Hexlet.io](https://ru.hexlet.io/programs/python).
 The project consist of five simple math games:
 1) Check the number is even or not using the command 'brain-even'
 2) Do you count well? Challenge yourself with calculator 'brain-calc'
