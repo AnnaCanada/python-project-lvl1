@@ -3,31 +3,35 @@
 from random import randint
 
 TASK = 'What number is missing in the progression?'
-COUNT = randint(5, 10)
+FIRST_NUMBER = 1
+LAST_NUMBER = 10
+MIN_LENGTH = 5
+MAX_LENGTH = 10
+FIRST_INDEX = 0
 
 
-def build_progression(initial_term, common_difference):
+def build_progression(initial_term, common_diff, progression_len):
     progression = [initial_term]
     index = 0
-    while index < (COUNT - 1):
+    while index < (progression_len - 1):
         index = index + 1
-        initial_term += common_difference
+        initial_term += common_diff
         progression.append(initial_term)
     return progression
 
 
-def ask_the_question():
-    new_progression = build_progression(
-        initial_term=randint(1, 10),
-        common_difference=randint(1, 10),
-    )
+def get_string(progression_len, hiden_index, answer):
     question = []
-    random_index = randint(0, COUNT - 2)
-    for index in range(COUNT):
-        question.append(str(new_progression[index]))
-    question[random_index] = '..'
-    return ' '.join(question), new_progression[random_index]
+    for index in range(progression_len):
+        question.append(str(answer[index]))
+    question[hiden_index] = '..'
+    return ' '.join(question)
 
 
 def get_game_round():
-    return ask_the_question()
+    initial_term = randint(FIRST_NUMBER, LAST_NUMBER)
+    common_diff = randint(FIRST_NUMBER, LAST_NUMBER)
+    progression_len = randint(MIN_LENGTH, MAX_LENGTH)
+    hiden_index = randint(FIRST_INDEX, progression_len - 2)
+    answer = build_progression(initial_term, common_diff, progression_len)
+    return get_string(progression_len, hiden_index, answer), answer[hiden_index]
