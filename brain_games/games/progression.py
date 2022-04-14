@@ -3,27 +3,31 @@
 from random import randint
 
 TASK = 'What number is missing in the progression?'
+COUNT = randint(5, 10)
 
-count = randint(5, 10)
 
-
-def build_the_progression():
-    start = randint(1, 10)
-    step = randint(1, 10)
-    progression = [start]
+def build_progression(initial_term, common_difference):
+    progression = [initial_term]
     index = 0
-    while index < (count - 1):
+    while index < (COUNT - 1):
         index = index + 1
-        start += step
-        progression.append(start)
+        initial_term += common_difference
+        progression.append(initial_term)
     return progression
 
 
-def get_game_round():
-    new_progression = build_the_progression()
+def ask_the_question():
+    new_progression = build_progression(
+        initial_term=randint(1, 10),
+        common_difference=randint(1, 10),
+    )
     question = []
-    hiden_number = randint(0, count - 2)
-    for index in range(count):
+    random_index = randint(0, COUNT - 2)
+    for index in range(COUNT):
         question.append(str(new_progression[index]))
-    question[hiden_number] = '..'
-    return ' '.join(question), new_progression[hiden_number]
+    question[random_index] = '..'
+    return ' '.join(question), new_progression[random_index]
+
+
+def get_game_round():
+    return ask_the_question()

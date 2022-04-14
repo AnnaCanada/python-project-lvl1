@@ -28,10 +28,9 @@ def play_game(game):
         if answer == str(correct_answer):
             print('Correct!')
             continue
-        print(
+        return print(
             f"'{answer}' is wrong answer ;(. ",
             f"Correct answer was '{correct_answer}'\n",
             f"Let's try again, {name}!",
         )
-        break
-    print('Congratulations, {}!'.format(name))
+    return print('Congratulations, {}!'.format(name))
