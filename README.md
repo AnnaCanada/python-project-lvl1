@@ -1,11 +1,11 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AnnaCanada/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AnnaCanada/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/eb9917bc1b3a938e6aaa/maintainability)](https://api.codeclimate.com/v1/badges/eb9917bc1b3a938e6aaa/maintainability)
-[![lint](https://github.com/AnnaCanada/python-project-lvl1/workflows/learn-github-actions/badge.svg)](https://github.com/AnnaCanada/python-project-lvl1/actions)
+[![lint](https://github.com/AnnaCanada/python-project-lvl1/actions/workflows/learn-github-actions.yml/badge.svg?branch=main&event=push)](https://github.com/AnnaCanada/python-project-lvl1/actions/workflows/learn-github-actions.yml)
 
 ## Description
 
-This is my first trainig project as a Python backend developer according to the curriculum of the ![Hexlet.io](https://ru.hexlet.io/programs/python).
+This is my first trainig project as a Python backend developer according to the curriculum of the [Hexlet.io](https://ru.hexlet.io/programs/python).
 The project consist of five simple math games:
 1) Check the number is even or not using the command 'brain-even'
 2) Do you count well? Challenge yourself with calculator 'brain-calc'
