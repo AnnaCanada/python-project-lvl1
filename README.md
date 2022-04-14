@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/AnnaCanada/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AnnaCanada/python-project-lvl1/actions)
 [![Maintainability](https://codeclimate.com/github/AnnaCanada/python-project-lvl1/maintainability)](https://api.codeclimate.com/v1/badges/eb9917bc1b3a938e6aaa/maintainability)
-[![linter](https://github.com/AnnaCanada/python-project-lvl1/actions/workflows/learn-github-actions.yml/badge.svg)](https://github.com/AnnaCanada/python-project-lvl1/actions)
+[![linter](https://github.com/AnnaCanada/python-project-lvl1/actions/workflows/learn-github-actions/badge.svg)](https://github.com/AnnaCanada/python-project-lvl1/actions)
 
 ## Description
 
