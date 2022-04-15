@@ -20,9 +20,9 @@ def build_progression(initial_term, common_diff, progression_len):
     return progression
 
 
-def get_question(answer, hidden_element_index):
+def get_question(progression, hidden_element_index):
     question = []
-    for element in answer:
+    for element in progression:
         question.append(str(element))
     question[hidden_element_index] = '..'
     return ' '.join(question)
