@@ -8,9 +8,10 @@ LAST_NUMBER = 100
 
 
 def is_it_even(number):
-    return 'yes' if number % 2 == 0 else 'no'
+    return number % 2 == 0
 
 
 def get_game_round():
     number = randint(FIRST_NUMBER, LAST_NUMBER)
-    return number, is_it_even(number)
+    correct_answer = 'yes' if is_it_even(number) else 'no'
+    return number, correct_answer

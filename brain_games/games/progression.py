@@ -20,11 +20,11 @@ def build_progression(initial_term, common_diff, progression_len):
     return progression
 
 
-def get_string(progression_len, hiden_index, answer):
+def get_question(answer, hidden_element_index):
     question = []
-    for index in range(progression_len):
-        question.append(str(answer[index]))
-    question[hiden_index] = '..'
+    for element in answer:
+        question.append(str(element))
+    question[hidden_element_index] = '..'
     return ' '.join(question)
 
 
@@ -32,6 +32,9 @@ def get_game_round():
     initial_term = randint(FIRST_NUMBER, LAST_NUMBER)
     common_diff = randint(FIRST_NUMBER, LAST_NUMBER)
     progression_len = randint(MIN_LENGTH, MAX_LENGTH)
-    hiden_index = randint(FIRST_INDEX, progression_len - 2)
+    hidden_element_index = randint(FIRST_INDEX, progression_len - 2)
     answer = build_progression(initial_term, common_diff, progression_len)
-    return get_string(progression_len, hiden_index, answer), answer[hiden_index]
+    return (
+        get_question(answer, hidden_element_index),
+        answer[hidden_element_index],
+    )

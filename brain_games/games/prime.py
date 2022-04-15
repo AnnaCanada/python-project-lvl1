@@ -10,10 +10,11 @@ LAST_NUMBER = 100
 def is_it_prime(number):
     for index in range(2, number):
         if (number % index) == 0:
-            return 'no'
-    return 'yes'
+            return False
+    return True
 
 
 def get_game_round():
     number = randint(FIRST_NUMBER, LAST_NUMBER)
-    return number, is_it_prime(number)
+    correct_answer = 'yes' if is_it_prime(number) else 'no'
+    return number, correct_answer
