@@ -19,3 +19,6 @@ python3 -m pip install --user git+https://github.com/AnnaCanada/python-project-l
 
 ### The full game process.
 [![asciicast](https://asciinema.org/a/jxc29JRLNk8DBxfSyLMEqCBGG.svg)](https://asciinema.org/a/jxc29JRLNk8DBxfSyLMEqCBGG)
+
+
+Let's try to commit from new Ubuntu.
